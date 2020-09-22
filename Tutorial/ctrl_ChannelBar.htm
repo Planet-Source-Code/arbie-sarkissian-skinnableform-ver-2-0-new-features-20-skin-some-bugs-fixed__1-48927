@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ctrl_ChannelBar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<p><font size="5" face="Verdana, Arial, Helvetica, sans-serif"><strong>ctrl_ChannelBar</strong></font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> ctrl_ChannelBar.ocx is 
+  one of the SKinableForm project ActiveX control members that gives you a pawerfull 
+  and very hadsome features.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> Its use is very simple. 
+  Simply add a ChannelBar ActiveX control to your VB project. This control automaticly 
+  set the SkinPath property to:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> [Current Dir]\Titanium 
+  </font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> Which is the default skin. 
+  Now you can use AddItem procedure to add a item to ListObject control:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> Private Sub Form_Load()<br>
+  &nbsp;&nbsp;&nbsp;Call Form1.ctrl_ListObject1.AddItem(&quot;Item #1&quot;)<br>
+  &nbsp;&nbsp;&nbsp;Call Form1.ctrl_ListObject1.AddItem(&quot;Item #2&quot;)<br>
+  End Sub</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> And AddSubItem procedure 
+  to add a subitem to a specify item:</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> Private Sub ctrl_ChannelBar1_Click(Index 
+  As Integer)<br>
+  Select Case Index<br>
+  Case 1:<br>
+  &nbsp;&nbsp;&nbsp;Call Form1.ctrl_ChannelBar1.AddSubItem(&quot;SubItem #1&quot;)<br>
+  &nbsp;&nbsp;&nbsp;Call Form1.ctrl_ChannelBar1.AddSubItem(&quot;SubItem #2&quot;)<br>
+  Case 2:<br>
+  &nbsp;&nbsp;&nbsp;Call Form1.ctrl_ChannelBar1.AddSubItem(&quot;SubItem #3&quot;)<br>
+  End Select<br>
+  End Sub</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> To change the skin, you 
+  should enter the skin folder path (which contains skin files) that you want 
+  to chose in the SkinPath property.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> Forecolor Property sets 
+  the ListObject item's forecolor. MouseDownColor sets the item's forecolor after 
+  MouseDown event and MouseMoveColor set's item's forecolor when MouseMove event 
+  occurs.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"> It was a brief tutorial 
+  of using ListObject.</font></p>
+<p><font face="Verdana, Arial, Helvetica, sans-serif"><a href="Main.htm">Back</a></font></p>
+<p>&nbsp; </p>
+</body>
+</html>
